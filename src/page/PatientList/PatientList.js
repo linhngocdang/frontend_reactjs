@@ -9,7 +9,7 @@ const PatientList = () => {
   }, []);
 
   const fetchData = () => {
-    fetch('https://project-final-h1c2.onrender.com/employee')
+    fetch('http://127.0.0.1:8000/employee')
       .then(response => response.json())
       .then(dt => {
         setData(dt);
@@ -19,7 +19,7 @@ const PatientList = () => {
   console.log('data', data);
 
   const deleteData = (id) => {
-    fetch('https://project-final-h1c2.onrender.com/employee/' + id + '/', {
+    fetch('http://127.0.0.1:8000/employee/' + id + '/', {
       method: 'DELETE',
       body: JSON.stringify(data),
     })

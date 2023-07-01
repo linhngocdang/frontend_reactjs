@@ -18,7 +18,7 @@ const Detail = () => {
     }, [])
 
     const fetchData = () => {
-        fetch(`https://project-final-h1c2.onrender.com/employee/${id}`)
+        fetch(`http://127.0.0.1:8000/employee/${id}`)
             .then(response => response.json())
             .then(data => {
                 setState({

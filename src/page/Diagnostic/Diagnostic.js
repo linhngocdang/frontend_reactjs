@@ -39,7 +39,7 @@ const Diagnostic = () => {
     _formData.append('birthday', state.birthday);
     _formData.append('featured_img', state.featured_img, state.featured_img.name);
 
-    axios.post('https://project-final-h1c2.onrender.com/employee/', _formData, {
+    axios.post('http://127.0.0.1:8000/employee/', _formData, {
       headers: {
         'content-type': 'multipart/form-data'
       }

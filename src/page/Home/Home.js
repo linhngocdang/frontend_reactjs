@@ -3,8 +3,6 @@ import './Home.scss';
 import image_4 from "../../assets/images/HRD.png";
 
 const Home = () => {
-
-
   return (
     <div className='home'>
       <div className=' bg-gray-50 py-4 md:py-8'>
