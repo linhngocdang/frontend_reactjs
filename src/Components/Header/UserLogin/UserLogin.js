@@ -23,7 +23,7 @@ const UserLogin = () => {
         formData.append('password', userLogin.password);
         console.log(formData);
         try {
-            axios.post('http://127.0.0.1:8000/doctor/', formData)
+            axios.post('http://127.0.0.1:8000/doctor-login/', formData)
                 .then((res) => {
                     if (res.data.bool === true) {
                         // Login successful, perform desired action

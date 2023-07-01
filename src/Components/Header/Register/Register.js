@@ -29,7 +29,7 @@ const Register = () => {
         formData.append('password', password);
 
         axios
-            .post('https://project-final-h1c2.onrender.com/doctor/', formData, {
+            .post('http://127.0.0.1:8000/doctor/', formData, {
                 headers: {
                     'content-type': 'multipart/form-data',
                 },
